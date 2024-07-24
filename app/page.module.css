@@ -27,6 +27,16 @@
   margin: 0;
 }
 
+.brokenLink{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
 .shrlnks_1{
   position: relative;
   background-image: url(./assert/desk_bg.png);
@@ -76,11 +86,10 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding-left: 50px;
 }
 
-.shrlnks_5 a{
-  width: 30%;
+.shrlnks_5 a:nth-child(1){
+  width: 35%;
   background-color: white;
   padding: 10px 20px;
   border-radius: 50px;
@@ -89,7 +98,6 @@
   overflow: hidden;
   text-align: center;
   color: black;
-  text-decoration: none;
   
 }
 
@@ -102,27 +110,19 @@
 }
 
 .shrlnks_6{
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 15px;
 }
 
 .mediaIcons{
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
   background-color: white;
   color: black;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
-}
-
-.mediaIcons:nth-child(1){
-  width: auto;
-  height: auto;
-  padding: 10px;
 }
