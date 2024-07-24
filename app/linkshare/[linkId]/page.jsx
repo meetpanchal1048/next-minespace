@@ -9,6 +9,8 @@ export const metadata = {
     description: 'Quick links created by mihir',
 }
 
+export const revalidate = 60;
+
 
 export default async function Page({ params }) {
 
@@ -31,8 +33,10 @@ export default async function Page({ params }) {
                     <div className={styles.shrlnks_4}>
                         <div className={styles.shrlnks_5}>
                             <a href={searchedIdData.link} target="_blank" rel="noopener noreferrer">{searchedIdData.title}</a>
-                            <a href="https://stackoverflow.com/users/23142049/meet" target="_blank" className={styles.mediaIcons}><IoLogoStackoverflow /></a>
-                            <a href="https://codepen.io/Meet-the-reactor" target="_blank" className={styles.mediaIcons}><FaCodepen /></a>
+                            <div className={styles.shrlnks_6}>
+                                <a href="https://stackoverflow.com/users/23142049/meet" target="_blank" className={styles.mediaIcons}><IoLogoStackoverflow /></a>
+                                <a href="https://codepen.io/Meet-the-reactor" target="_blank" className={styles.mediaIcons}><FaCodepen /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
