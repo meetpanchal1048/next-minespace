@@ -1,4 +1,4 @@
-import getData from "@/lib/getData";
+import {getData} from "@/lib/getData";
 import styles from '../page.module.css'
 
 export const metadata = {

@@ -1,4 +1,4 @@
-import getData from "@/lib/getData";
+import {getData} from "@/lib/getData";
 import styles from "../../page.module.css"
 import { IoLogoStackoverflow } from "react-icons/io5";
 import { FaCodepen } from "react-icons/fa";
