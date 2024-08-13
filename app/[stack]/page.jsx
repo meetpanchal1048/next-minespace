@@ -27,13 +27,14 @@ export default async function page({params}) {
                     </div>
                     {filteredBlogs.map((item) => (
                         <div className={styles.blogscss3} key={item.id}>
-                            <div className={styles.blogstag}>Image Innershadow</div>
+                            <div className={styles.blogstag}>{(item.tag)?item.tag:stackName}</div>
                             <pre className={styles.blogsTitle}>
-                                <a href={`css/${item.id}`}>{item.title}</a>
+                                <a href={`${stackName}/${item.id}`}>{item.title}</a>
                             </pre>
                             <div className={styles.blogsDesc}>{item.desc}</div>
                         </div>
                     ))}
+                    {postNum === 0 && <p className={styles.emptyDiv}>No blogs available</p>}
                 </div>
             </div>
             <Footer/>
